@@ -6,7 +6,7 @@ export class cardComponent extends HTMLElement{
             @import "css/bootstrap/bootstrap.min.css";
             @import "./src/App/components/card/cardStyle.css";
         </style>
-        <div class="card" style="max-width: 200px; min-width: 200px;">
+        <div class="card" style="width: 16rem;">
         <slot name="imagen"></slot>
         <div class="card-body">
             <h5 class="card-title"><slot name="nombre"></slot></h5>
