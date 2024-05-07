@@ -7,16 +7,16 @@ export class cardComponent extends HTMLElement{
             @import "./src/App/components/card/cardStyle.css";
         </style>
         <div class="card" style="width: 16rem;">
-        <slot name="imagen"></slot>
-        <div class="card-body">
-            <h5 class="card-title"><slot name="nombre"></slot></h5>
-            <p class="card-text"><slot name="descripcion"></slot></p>
+            <slot name="imagen"></slot>
+            <div class="card-body">
+                <h5 class="card-title"><slot name="nombre"></slot></h5>
+                <p class="card-text"><slot name="descripcion"></slot></p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><slot name="fecha"></slot></li>
+                <li class="list-group-item"><slot name="casa"></slot></li>
+            </ul>
         </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item"><slot name="fecha"></slot></li>
-            <li class="list-group-item"><slot name="casa"></slot></li>
-        </ul>
-    </div>
         `;
     }
 }

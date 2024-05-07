@@ -64,8 +64,8 @@ const heroes = [
 document.addEventListener('DOMContentLoaded', (e) => {
     heroes.forEach((item) => {
         divCards.insertAdjacentHTML('beforeend', /* html */`
-        <card-component class="g-3 col-3">
-            <span slot="imagen"><img src="${item.imagen}" class="card-img-top" alt="${item.nombre}"></span>
+        <card-component class="g-5 col-3">
+            <span slot="imagen"><img src="${item.imagen}" class="card-img-top" alt="${item.nombre}" style="min-height: 414px;"></span>
             <span slot="nombre">${item.nombre}</span>
             <span slot="descripcion">${item.descripcion}</span>
             <span slot="fecha">${item.fecha}</span>
